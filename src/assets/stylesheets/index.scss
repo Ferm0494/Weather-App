@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap");
+html,
+body {
+    height: 100%;
+}
+
+h4 {
+    font-family: "Lemonada", cursive;
+}
+
+.weather-component {
+    height: 35em;
+}
+
+.sunny {
+    background: #cac531;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f3f9a7, #cac531);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f3f9a7, #cac531);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

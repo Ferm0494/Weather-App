@@ -1,0 +1,5 @@
+const OPEN_WEATHER_API_KEY = "f7243a235cd34351e8ccc9117c6197b3"
+
+export {
+    OPEN_WEATHER_API_KEY
+}
