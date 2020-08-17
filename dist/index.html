@@ -8,14 +8,14 @@
     <title>Weather App</title>
 </head>
 
-<body class="sunny">
+<body class="backg">
     <div class="container-fluid">
         <div class="row">
             <div class="col d-flex justify-content-center ">
                 <div class="spinner-border text-danger spinner" role="status">
                     <span class="sr-only">Loading...</span>
                 </div>
-                <div class="container col-12 col-sm-9 col-md-7 col-lg-4 sunny rounded shadow-lg weather-component p-3 mt-4 d-none">
+                <div class="container col-12 col-sm-9 col-md-7 col-lg-4 rounded shadow-lg weather-component p-3 mt-4 d-none backg">
                     <h4 class="text-white">Weather App :</h4>
                     <form>
                         <label for="city" class="lead text-white">Type City:</label>
@@ -45,9 +45,16 @@
                                 <p class="text-white values mt-2">28.5</p>
                             </h5>
                         </div>
+                        <div class="row custom-control custom-switch">
+                            <div class="col">
+                                <input type="checkbox" class="custom-control-input" id="customSwitches">
+                                <label class="custom-control-label text-white lead success" for="customSwitches" data-onstyle="success"> F
+                                </label>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col d-flex justify-content-center">
                             <img id="glify" alt="weatherIcon.gif" />
                         </div>
                     </div>

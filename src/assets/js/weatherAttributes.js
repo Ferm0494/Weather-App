@@ -2,16 +2,23 @@ const weatherAttributes = (json) => {
     return {
         icon: json.weather[0].icon,
         temperatureInCelc: () => {
-            return json.main.temp - 275.15;
+            return (json.main.temp - 275.15).toFixed(2) + "° C";
         },
+
+        location: json.name,
         // humidity: json.main.humidity,
-        temp_max: json.main.temp_max,
-        temp_min: json.main.temp_min,
+        tempMaxInC: () => {
+            return (json.main.temp_max - 275.15).toFixed(2) + "° C"
+        },
+        tempMinInC: () => {
+            return (json.main.temp_min - 275.15).toFixed(2) + "° C"
+        },
         timezone: () => {
             let date = new Date();
             let offset = json.timezone / 3600;
-            let hours = date.getHours() + offset
-            let time = `${hours}: ${date.getMinutes()}`
+            console.log(`This is hours: ${date.getHours()}`)
+            date.setHours(date.getUTCHours() + offset);
+            let time = `${date.getHours()}: ${date.getMinutes()}`
             return time
         },
         temperatureToFarenheit: () => {
