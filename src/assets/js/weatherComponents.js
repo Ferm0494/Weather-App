@@ -8,6 +8,11 @@ import {
     form
 } from './components'
 
+const renderWeatherComponentsC= (weather)=>{
+    values[1].innerHTML = weather.temperatureInCelc();
+    values[2].innerHTML = weather.tempMaxInC();
+    values[3].innerHTML = weather.tempMinInC();
+}
 
 
 const renderWeatherComponents = async(weather) => {
@@ -16,12 +21,22 @@ const renderWeatherComponents = async(weather) => {
     gifImg.src = icon;
     form.value = weather.location
     values[0].innerHTML = weather.timezone();
-    values[1].innerHTML = weather.temperatureInCelc();
-    values[2].innerHTML = weather.tempMaxInC();
-    values[3].innerHTML = weather.tempMinInC();
+    renderWeatherComponentsC(weather);
     return true;
 
 
 }
 
-export default renderWeatherComponents
+
+
+const renderWeatherComponentsF = (weather)=>{
+    values[1].innerHTML = weather.temperatureToFarenheit();
+    values[2].innerHTML = weather.tempMaxInF();
+    values[3].innerHTML = weather.tempMinInF();
+}
+
+export{
+    renderWeatherComponents,
+    renderWeatherComponentsF,
+    renderWeatherComponentsC
+}

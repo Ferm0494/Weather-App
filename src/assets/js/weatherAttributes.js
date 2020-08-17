@@ -10,8 +10,22 @@ const weatherAttributes = (json) => {
         tempMaxInC: () => {
             return (json.main.temp_max - 275.15).toFixed(2) + "° C"
         },
+
+        tempMaxInF:()=>{
+            let kelvin = json.main.temp_max;
+            let farenheit = (((kelvin - 275.15) * 9) / 5) + 32
+            return farenheit.toFixed(2) + "° F";;
+           
+        },
         tempMinInC: () => {
             return (json.main.temp_min - 275.15).toFixed(2) + "° C"
+        },
+
+        tempMinInF:()=>{  
+            let kelvin = json.main.temp_min;
+            let farenheit = (((kelvin - 275.15) * 9) / 5) + 32
+            return farenheit.toFixed(2) + "° F";  
+
         },
         timezone: () => {
             let date = new Date();
@@ -23,9 +37,10 @@ const weatherAttributes = (json) => {
         },
         temperatureToFarenheit: () => {
             let kelvin = json.main.temp;
-            let farenheit = (((kelvin - 273.15) * 9) / 5) + 32
-            return farenheit;
-        }
+            let farenheit = (((kelvin - 275.15) * 9) / 5) + 32
+            return farenheit.toFixed(2) + "° F";
+        },
+
     }
 }
 

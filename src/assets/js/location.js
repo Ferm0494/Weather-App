@@ -11,7 +11,7 @@ import
 weatherAttributes
 from './weatherAttributes'
 
-import renderWeatherComponents from './weatherComponents'
+import {renderWeatherComponents} from './weatherComponents'
 
 const loading = () => {
     container.classList.add('d-none');
@@ -28,8 +28,10 @@ const init = async() => {
     let position = await getLocation()
     let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${OPEN_WEATHER_API_KEY}`)
     let json = await response.json()
+    localStorage.setItem('data',JSON.stringify(json))
     console.log(json)
     let selectedAttributes = weatherAttributes(json);
+    
     renderWeatherComponents(selectedAttributes).then(res => {
         doneLoading()
     })
