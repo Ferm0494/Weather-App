@@ -29,7 +29,6 @@ const init = async() => {
     let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${OPEN_WEATHER_API_KEY}`)
     let json = await response.json()
     localStorage.setItem('data',JSON.stringify(json))
-    console.log(json)
     let selectedAttributes = weatherAttributes(json);
     
     renderWeatherComponents(selectedAttributes).then(res => {
@@ -51,6 +50,23 @@ const getLocation = async() => {
     }
 }
 
+const getResCity=async(city)=>{
+    loading()
+    let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${OPEN_WEATHER_API_KEY}`)
+    let json = await response.json();
+    localStorage.setItem('data',JSON.stringify(json))
+    // console.log(json)
+    let selectedAttributes = weatherAttributes(json)
+    console.log(selectedAttributes)
+    renderWeatherComponents(selectedAttributes).then(res=>{
+        doneLoading()
+    })
+
+
+
+}
+
 export {
-    init
+    init,
+    getResCity
 }

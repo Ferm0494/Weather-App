@@ -48,11 +48,25 @@ h4 {
 }
 
 
-
-
-
-
 #glify {
     height: 16em;
     width: 20em;
 }
+
+
+@media (max-width: 575.98px) { 
+    #glify{
+        height:10em;
+        width:10em;
+    }
+
+    .weather-component{
+        height:39em;
+    }
+
+    html,body{
+        height:42em;
+    }
+
+
+ }
