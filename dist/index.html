@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather App</title>
+</head>
+
+<body class="backg">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col d-flex justify-content-center ">
+                <div class="spinner-border text-danger spinner" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="container col-12 col-sm-9 col-md-7 col-lg-4 rounded shadow-lg weather-component p-3 mt-4 d-none backg">
+                    <h4 class="text-white">Weather App :</h4>
+                    <form>
+                        <label for="city" class="lead text-white">Type City:</label>
+                        <div class="d-flex  justify-content-between w-100 ">
+                            <input type="text" class="form-control col-6" required />
+                            <input type="submit" value="Search" class="btn btn-success shadow-lg col-5" id="search" />
+                        </div>
+                    </form>
+                    <div class="row  mt-3">
+                        <div class="col-6 d-flex  flex-column">
+                            <h5 class="text-white">
+                                Local Time:
+                                <p class="text-white values mt-2">21:35</p>
+                            </h5>
+                            <h5 class="text-white">
+                                Temperature:
+                                <p class="text-white values mt-2">28.5</p>
+                            </h5>
+                        </div>
+                        <div class="col-6 d-flex flex-column">
+                            <h5 class="text-white">
+                                Max Temperature:
+                                <p class="text-white values mt-2">21:35</p>
+                            </h5>
+                            <h5 class="text-white">
+                                Min Temperature:
+                                <p class="text-white values mt-2">28.5</p>
+                            </h5>
+                        </div>
+                        <label class="ml-2 switch">
+                            <input type="checkbox" id="toggle">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <img id="glify" alt="weatherIcon.gif" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+
+/* stylelint-disable csstree/validator,  function-linear-gradient-no-nonstandard-direction */
+.sunny {
+  background: #cac531;
+
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f3f9a7, #cac531);
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f3f9a7, #cac531);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.sun-clouds {
+  background: #1c92d2;
+
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f2fcfe, #1c92d2);
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f2fcfe, #1c92d2);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.night-clouds {
+  background: #141e30;
+
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #243b55, #141e30);
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #243b55, #141e30);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cloudy {
+  background: #56ccf2;
+
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2f80ed, #56ccf2);
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2f80ed, #56ccf2);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.dark-clouds {
+  background: #304352;
+
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #d7d2cc, #304352);
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #d7d2cc, #304352);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.dark-clouds-raining {
+  background: #0f2027;
+
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2c5364, #203a43, #0f2027);
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2c5364, #203a43, #0f2027);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.raining-with-sun {
+  background: #d1913c;
+
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffd194, #d1913c);
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffd194, #d1913c);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.night {
+  background: #232526;
+
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #414345, #232526);
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #414345, #232526);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* stylelint-enablecsstree/validator,  function-linear-gradient-no-nonstandard-direction */

@@ -1,0 +1,68 @@
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+h4 {
+  font-family: "Lemonada", cursive;
+}
+
+.min-top {
+  top: 0.15rem;
+}
+
+.weather-component {
+  height: 38em;
+}
+
+.custom-control-label::before {
+  top: 0;
+  height: 1.6rem;
+  content: "C";
+}
+
+.custom-switch .custom-control-label::before {
+  width: 3.5rem;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #228838;
+  background-color: #228838;
+}
+
+// AFTER
+
+.custom-switch .custom-control-label::after {
+  width: calc(1.25rem - 4px);
+  height: calc(1.5rem - 4px);
+  top: calc(0.25rem - 2.5px);
+  left: calc(-2.5rem + 10px);
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  transform: translateX(1.6rem);
+}
+
+#glify {
+  height: 16em;
+  width: 20em;
+}
+
+@media (max-width: 575.98px) {
+  #glify {
+    height: 10em;
+    width: 10em;
+  }
+
+  .weather-component {
+    height: 39em;
+  }
+
+  html,
+  body {
+    height: 42em;
+  }
+}
